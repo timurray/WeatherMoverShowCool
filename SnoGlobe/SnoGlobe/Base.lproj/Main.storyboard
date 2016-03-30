@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SnoGlobe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMU-c5-qBC">
-                                <rect key="frame" x="229" y="28" width="143" height="52"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-qO-Bmu">
+                                <rect key="frame" x="20" y="234" width="499" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W29-Fu-8La">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W29-Fu-8La">
                                 <rect key="frame" x="281" y="88" width="38" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show">
@@ -33,17 +34,17 @@
                                     <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFD-m9-eZA"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-nY-HNR">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-nY-HNR">
                                 <rect key="frame" x="0.0" y="384" width="600" height="261"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-zr-ljT">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-zr-ljT">
                                         <rect key="frame" x="0.0" y="44" width="600" height="172"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="5ON-gK-r20"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="SGZ-cJ-Nwk"/>
                                         </connections>
                                     </pickerView>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-T3-A9t">
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-T3-A9t">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <items>
@@ -58,15 +59,31 @@
                                     </toolbar>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yyx-T3-A9t" secondAttribute="trailing" id="A6K-p6-zKx"/>
+                                    <constraint firstItem="Yyx-T3-A9t" firstAttribute="leading" secondItem="eu1-nY-HNR" secondAttribute="leading" id="GEz-6s-LaD"/>
+                                    <constraint firstItem="qx6-zr-ljT" firstAttribute="leading" secondItem="eu1-nY-HNR" secondAttribute="leading" id="VNm-Qw-yGB"/>
+                                    <constraint firstAttribute="trailing" secondItem="qx6-zr-ljT" secondAttribute="trailing" id="wDa-qi-OAg"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-qO-Bmu">
-                                <rect key="frame" x="20" y="234" width="499" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SnoGlobe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMU-c5-qBC">
+                                <rect key="frame" x="229" y="28" width="143" height="52"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="W29-Fu-8La" secondAttribute="trailing" constant="50" id="6Xl-wj-VX0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aMU-c5-qBC" secondAttribute="trailing" constant="50" id="82R-ce-KEK"/>
+                            <constraint firstItem="W29-Fu-8La" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="L5s-zF-Uex"/>
+                            <constraint firstItem="aMU-c5-qBC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Nnf-8k-Q7M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aMU-c5-qBC" secondAttribute="trailing" constant="50" id="bcd-H9-FRv"/>
+                            <constraint firstItem="aMU-c5-qBC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="i6K-aH-lkG"/>
+                            <constraint firstItem="eu1-nY-HNR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="luW-5v-drg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eu1-nY-HNR" secondAttribute="trailing" id="voL-ug-gjk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="WeatherOptions" destination="qx6-zr-ljT" id="z9k-sF-YRH"/>

@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     weatherarray = [[NSArray alloc]initWithObjects:@"sun", @"sunWclouds", @"clouds", @"showers", @"sunshowers", @"rain", @"snow",@"flurries",@"fog",nil];
     
-    _pickerViewContainer.frame = CGRectMake(0, 600, 261, 261);
+    _pickerViewContainer.frame = CGRectMake(0, 750, 600, 261);
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -61,7 +61,7 @@
 - (IBAction)hideButton:(id)sender {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
-    _pickerViewContainer.frame = CGRectMake(0, 800, 600, 261);
+    _pickerViewContainer.frame = CGRectMake(0, 750, 600, 261);
     [UIView commitAnimations];
 }
 @end
