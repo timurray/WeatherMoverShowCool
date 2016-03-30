@@ -12,8 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UIPickerView *WeatherOptions;
 
-@property (strong, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) IBOutlet UIView *pickerViewContainer;
+@property (strong, nonatomic) IBOutlet UIImageView *weatherImage;
 
 - (IBAction)showButton:(id)sender;
 - (IBAction)hideButton:(id)sender;

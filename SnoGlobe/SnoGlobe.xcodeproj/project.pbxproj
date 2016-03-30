@@ -15,6 +15,7 @@
 		1B9BA6DC1CAB047F00CED9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA6DA1CAB047F00CED9EF /* LaunchScreen.storyboard */; };
 		1B9BA6E71CAB047F00CED9EF /* SnoGlobeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA6E61CAB047F00CED9EF /* SnoGlobeTests.m */; };
 		1B9BA6F21CAB047F00CED9EF /* SnoGlobeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA6F11CAB047F00CED9EF /* SnoGlobeUITests.m */; };
+		1B9BA7001CAC93E700CED9EF /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA6FF1CAC93E700CED9EF /* rain.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1B9BA6ED1CAB047F00CED9EF /* SnoGlobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoGlobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9BA6F11CAB047F00CED9EF /* SnoGlobeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnoGlobeUITests.m; sourceTree = "<group>"; };
 		1B9BA6F31CAB047F00CED9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9BA6FF1CAC93E700CED9EF /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rain.png; path = ../../../Downloads/rain.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		1B9BA6C01CAB047E00CED9EF = {
 			isa = PBXGroup;
 			children = (
+				1B9BA6FF1CAC93E700CED9EF /* rain.png */,
 				1B9BA6CB1CAB047E00CED9EF /* SnoGlobe */,
 				1B9BA6E51CAB047F00CED9EF /* SnoGlobeTests */,
 				1B9BA6F01CAB047F00CED9EF /* SnoGlobeUITests */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9BA6DC1CAB047F00CED9EF /* LaunchScreen.storyboard in Resources */,
+				1B9BA7001CAC93E700CED9EF /* rain.png in Resources */,
 				1B9BA6D91CAB047F00CED9EF /* Assets.xcassets in Resources */,
 				1B9BA6D71CAB047F00CED9EF /* Main.storyboard in Resources */,
 			);

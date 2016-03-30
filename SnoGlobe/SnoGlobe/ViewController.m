@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-@synthesize WeatherOptions, label;
+@synthesize WeatherOptions, weatherImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +43,18 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    label.text = [NSString stringWithFormat:@"%@ %@",[weatherarray objectAtIndex:[WeatherOptions selectedRowInComponent:0]], @"animation plays now"];
+    UIImage *rain = [UIImage imageNamed:@"rain.png"];
+    
+    if([[weatherarray objectAtIndex:row] isEqual:@"rain"])
+    {
+        [weatherImage setImage:rain];
+    }
+    else{
+        NSLog(@"not rain");
+        [weatherImage setImage:nil];
+        
+    }
+    /*label.text = [NSString stringWithFormat:@"%@ %@",[weatherarray objectAtIndex:[WeatherOptions selectedRowInComponent:0]], @"animation plays now"];*/
 }
 
 - (void)didReceiveMemoryWarning {
