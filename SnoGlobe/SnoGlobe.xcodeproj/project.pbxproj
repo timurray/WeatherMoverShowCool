@@ -16,6 +16,14 @@
 		1B9BA6E71CAB047F00CED9EF /* SnoGlobeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA6E61CAB047F00CED9EF /* SnoGlobeTests.m */; };
 		1B9BA6F21CAB047F00CED9EF /* SnoGlobeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA6F11CAB047F00CED9EF /* SnoGlobeUITests.m */; };
 		1B9BA7001CAC93E700CED9EF /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA6FF1CAC93E700CED9EF /* rain.png */; };
+		1B9BA7021CAC96E000CED9EF /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7011CAC96E000CED9EF /* sun.jpeg */; };
+		1B9BA7041CAC96EA00CED9EF /* sunwclouds.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7031CAC96EA00CED9EF /* sunwclouds.jpeg */; };
+		1B9BA7061CAC96F000CED9EF /* clouds.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7051CAC96F000CED9EF /* clouds.gif */; };
+		1B9BA7081CAC96F800CED9EF /* showers.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7071CAC96F800CED9EF /* showers.png */; };
+		1B9BA70A1CAC96FF00CED9EF /* sunshowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7091CAC96FF00CED9EF /* sunshowers.png */; };
+		1B9BA70E1CAC974700CED9EF /* flurries.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA70D1CAC974700CED9EF /* flurries.jpeg */; };
+		1B9BA7101CAC974B00CED9EF /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA70F1CAC974B00CED9EF /* fog.png */; };
+		1B9BA7121CAC9A5000CED9EF /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA7111CAC9A5000CED9EF /* snow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		1B9BA6F11CAB047F00CED9EF /* SnoGlobeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnoGlobeUITests.m; sourceTree = "<group>"; };
 		1B9BA6F31CAB047F00CED9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9BA6FF1CAC93E700CED9EF /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rain.png; path = ../../../Downloads/rain.png; sourceTree = "<group>"; };
+		1B9BA7011CAC96E000CED9EF /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sun.jpeg; path = ../../../Downloads/sun.jpeg; sourceTree = "<group>"; };
+		1B9BA7031CAC96EA00CED9EF /* sunwclouds.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunwclouds.jpeg; path = ../../../Downloads/sunwclouds.jpeg; sourceTree = "<group>"; };
+		1B9BA7051CAC96F000CED9EF /* clouds.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = clouds.gif; path = ../../../Downloads/clouds.gif; sourceTree = "<group>"; };
+		1B9BA7071CAC96F800CED9EF /* showers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = showers.png; path = ../../../Downloads/showers.png; sourceTree = "<group>"; };
+		1B9BA7091CAC96FF00CED9EF /* sunshowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunshowers.png; path = ../../../Downloads/sunshowers.png; sourceTree = "<group>"; };
+		1B9BA70D1CAC974700CED9EF /* flurries.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = flurries.jpeg; path = ../../../Downloads/flurries.jpeg; sourceTree = "<group>"; };
+		1B9BA70F1CAC974B00CED9EF /* fog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fog.png; path = ../../../Downloads/fog.png; sourceTree = "<group>"; };
+		1B9BA7111CAC9A5000CED9EF /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snow.png; path = ../../../Downloads/snow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,14 @@
 		1B9BA6C01CAB047E00CED9EF = {
 			isa = PBXGroup;
 			children = (
+				1B9BA7071CAC96F800CED9EF /* showers.png */,
+				1B9BA7051CAC96F000CED9EF /* clouds.gif */,
+				1B9BA7031CAC96EA00CED9EF /* sunwclouds.jpeg */,
+				1B9BA7111CAC9A5000CED9EF /* snow.png */,
+				1B9BA70F1CAC974B00CED9EF /* fog.png */,
+				1B9BA7091CAC96FF00CED9EF /* sunshowers.png */,
+				1B9BA7011CAC96E000CED9EF /* sun.jpeg */,
+				1B9BA70D1CAC974700CED9EF /* flurries.jpeg */,
 				1B9BA6FF1CAC93E700CED9EF /* rain.png */,
 				1B9BA6CB1CAB047E00CED9EF /* SnoGlobe */,
 				1B9BA6E51CAB047F00CED9EF /* SnoGlobeTests */,
@@ -246,6 +270,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9BA7041CAC96EA00CED9EF /* sunwclouds.jpeg in Resources */,
+				1B9BA7081CAC96F800CED9EF /* showers.png in Resources */,
+				1B9BA7121CAC9A5000CED9EF /* snow.png in Resources */,
+				1B9BA7021CAC96E000CED9EF /* sun.jpeg in Resources */,
+				1B9BA70A1CAC96FF00CED9EF /* sunshowers.png in Resources */,
+				1B9BA70E1CAC974700CED9EF /* flurries.jpeg in Resources */,
+				1B9BA7061CAC96F000CED9EF /* clouds.gif in Resources */,
+				1B9BA7101CAC974B00CED9EF /* fog.png in Resources */,
 				1B9BA6DC1CAB047F00CED9EF /* LaunchScreen.storyboard in Resources */,
 				1B9BA7001CAC93E700CED9EF /* rain.png in Resources */,
 				1B9BA6D91CAB047F00CED9EF /* Assets.xcassets in Resources */,

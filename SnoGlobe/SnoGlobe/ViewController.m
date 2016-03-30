@@ -45,14 +45,57 @@
 {
     UIImage *rain = [UIImage imageNamed:@"rain.png"];
     
+    UIImage *sun = [UIImage imageNamed:@"sun.jpeg"];
+    
+    UIImage *sunwclouds = [UIImage imageNamed:@"sunwclouds.jpeg"];
+    
+    UIImage *clouds = [UIImage imageNamed:@"clouds.gif"];
+    
+    UIImage *showers = [UIImage imageNamed:@"sunshowers.png"];
+    
+    UIImage *snow = [UIImage imageNamed:@"snow.png"];
+    
+    UIImage *flurries = [UIImage imageNamed:@"flurries.jpeg"];
+    
+    UIImage *fog = [UIImage imageNamed:@"fog.png"];
+    
+    UIImage *sunshowers = [UIImage imageNamed:@"sunshowers.png"];
+    
     if([[weatherarray objectAtIndex:row] isEqual:@"rain"])
     {
         [weatherImage setImage:rain];
     }
-    else{
-        NSLog(@"not rain");
-        [weatherImage setImage:nil];
-        
+    else if([[weatherarray objectAtIndex:row] isEqual:@"sun"])
+    {
+        [weatherImage setImage:sun];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"sunWclouds"])
+    {
+        [weatherImage setImage:sunwclouds];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"clouds"])
+    {
+        [weatherImage setImage:clouds];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"showers"])
+    {
+        [weatherImage setImage:showers];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"sunshowers"])
+    {
+        [weatherImage setImage:sunshowers];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"snow"])
+    {
+        [weatherImage setImage:snow];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"flurries"])
+    {
+        [weatherImage setImage:flurries];
+    }
+    else if([[weatherarray objectAtIndex:row] isEqual:@"fog"])
+    {
+        [weatherImage setImage:fog];
     }
     /*label.text = [NSString stringWithFormat:@"%@ %@",[weatherarray objectAtIndex:[WeatherOptions selectedRowInComponent:0]], @"animation plays now"];*/
 }
