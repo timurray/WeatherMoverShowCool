@@ -13,6 +13,10 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *WeatherOptions;
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UIView *pickerViewContainer;
+
+- (IBAction)showButton:(id)sender;
+- (IBAction)hideButton:(id)sender;
 
 @end
 

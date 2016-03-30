@@ -23,21 +23,44 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake your weather down!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-x5-QgC">
-                                <rect key="frame" x="130" y="546" width="341" height="34"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="26"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-zr-ljT">
-                                <rect key="frame" x="51" y="118" width="499" height="195"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W29-Fu-8La">
+                                <rect key="frame" x="281" y="88" width="38" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5ON-gK-r20"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SGZ-cJ-Nwk"/>
+                                    <action selector="showButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFD-m9-eZA"/>
                                 </connections>
-                            </pickerView>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-nY-HNR">
+                                <rect key="frame" x="0.0" y="384" width="600" height="261"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-zr-ljT">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="172"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="5ON-gK-r20"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="SGZ-cJ-Nwk"/>
+                                        </connections>
+                                    </pickerView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyx-T3-A9t">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <items>
+                                            <barButtonItem title="Hide" id="4YB-xi-oRj">
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="hideButton:" destination="BYZ-38-t0r" id="9R2-WG-0Lp"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="barTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-qO-Bmu">
-                                <rect key="frame" x="51" y="438" width="499" height="34"/>
+                                <rect key="frame" x="20" y="234" width="499" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,6 +71,7 @@
                     <connections>
                         <outlet property="WeatherOptions" destination="qx6-zr-ljT" id="z9k-sF-YRH"/>
                         <outlet property="label" destination="Ab9-qO-Bmu" id="r4S-TG-Y59"/>
+                        <outlet property="pickerViewContainer" destination="eu1-nY-HNR" id="nui-ii-gdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
