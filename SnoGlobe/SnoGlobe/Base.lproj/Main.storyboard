@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-nY-HNR">
-                                <rect key="frame" x="0.0" y="384" width="600" height="261"/>
+                                <rect key="frame" x="0.0" y="750" width="600" height="261"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-zr-ljT">
                                         <rect key="frame" x="0.0" y="44" width="600" height="172"/>
