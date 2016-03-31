@@ -45,58 +45,104 @@ NSInteger rowToUse;
 -(IBAction)showWeather
 {
     
-    UIImage *rain = [UIImage imageNamed:@"rain.png"];
+    UIImage *rain = [UIImage imageNamed:@"rain2.jpeg"];
     
-    UIImage *sun = [UIImage imageNamed:@"sun.jpeg"];
+    UIImage *sun = [UIImage imageNamed:@"sunny.jpeg"];
     
-    UIImage *sunwclouds = [UIImage imageNamed:@"sunwclouds.jpeg"];
+    UIImage *sunwclouds = [UIImage imageNamed:@"sun2clouds6.jpeg"];
     
-    UIImage *clouds = [UIImage imageNamed:@"clouds.gif"];
+    UIImage *clouds = [UIImage imageNamed:@"clouds2.jpg"];
     
-    UIImage *showers = [UIImage imageNamed:@"showers.png"];
+    UIImage *showers = [UIImage imageNamed:@"showers2.jpeg"];
     
     UIImage *snow = [UIImage imageNamed:@"snow.png"];
     
-    UIImage *flurries = [UIImage imageNamed:@"flurries.jpeg"];
+    UIImage *flurries = [UIImage imageNamed:@"flurry4.jpeg"];
     
     UIImage *fog = [UIImage imageNamed:@"fog.png"];
     
-    UIImage *sunshowers = [UIImage imageNamed:@"sunshowers.png"];
+    UIImage *sunshowers = [UIImage imageNamed:@"sunshowers2.jpeg"];
     
     if([[weatherarray objectAtIndex:rowToUse] isEqual:@"rain"])
     {
+        //[weatherImage setImage:rain];
         [weatherImage setImage:rain];
+        
+        NSArray *rainyImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"rain.jpeg"], [UIImage imageNamed:@"rain2.jpeg"], nil];
+        
+        weatherImage.animationImages = rainyImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sun"])
     {
         [weatherImage setImage:sun];
+        
+        NSArray *sunnyImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"sunny.jpeg"], [UIImage imageNamed:@"sunny2.jpeg"], nil];
+        
+        weatherImage.animationImages = sunnyImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sunWclouds"])
     {
         [weatherImage setImage:sunwclouds];
+        
+        NSArray *sunnycloudsImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"sunnyclouds.jpeg"], [UIImage imageNamed:@"sunny2clouds2.jpeg"],[UIImage imageNamed:@"sunny2clouds3.jpeg"],[UIImage imageNamed:@"sunny2clouds4.jpeg"],[UIImage imageNamed:@"sunny2clouds5.jpeg"],[UIImage imageNamed:@"sunny2clouds6.jpeg"], nil];
+        
+        weatherImage.animationImages = sunnycloudsImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
+        
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"clouds"])
     {
         [weatherImage setImage:clouds];
+        
+        NSArray *cloudyImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"clouds.jpg"], [UIImage imageNamed:@"clouds2.jpg"], nil];
+        
+        weatherImage.animationImages = cloudyImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"showers"])
     {
         [weatherImage setImage:showers];
+        
+        NSArray *showerImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"showers.jpeg"], [UIImage imageNamed:@"showers2.jpeg"], nil];
+        
+        weatherImage.animationImages = showerImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sunshowers"])
     {
         [weatherImage setImage:sunshowers];
+        
+        NSArray *sunshowerImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"sun.jpeg"], [UIImage imageNamed:@"sunshowers2.jpeg"], nil];
+        
+        weatherImage.animationImages = sunshowerImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"snow"])
     {
+        // still to come for animate
         [weatherImage setImage:snow];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"flurries"])
     {
         [weatherImage setImage:flurries];
+        
+        NSArray *flurryImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"flurry.jpeg"], [UIImage imageNamed:@"flurry2.jpeg"],[UIImage imageNamed:@"flurry3.jpeg"],[UIImage imageNamed:@"flurry4.jpeg"], nil];
+        
+        weatherImage.animationImages = flurryImageArray;
+        weatherImage.animationDuration = 4.0;
+        [weatherImage startAnimating];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"fog"])
     {
+        // still to come for animate
         [weatherImage setImage:fog];
     }
 }
