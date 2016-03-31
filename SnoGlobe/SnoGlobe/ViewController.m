@@ -108,7 +108,7 @@
 - (IBAction)showButton:(id)sender {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
-    _pickerViewContainer.frame = CGRectMake(0, 400, 600, 261);
+    _pickerViewContainer.frame = CGRectMake(0, 450, 600, 261);
     [UIView commitAnimations];
 }
 
