@@ -51,7 +51,7 @@
     
     UIImage *clouds = [UIImage imageNamed:@"clouds.gif"];
     
-    UIImage *showers = [UIImage imageNamed:@"sunshowers.png"];
+    UIImage *showers = [UIImage imageNamed:@"showers.png"];
     
     UIImage *snow = [UIImage imageNamed:@"snow.png"];
     
