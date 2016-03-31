@@ -18,12 +18,87 @@
 
 @synthesize WeatherOptions, weatherImage;
 
+NSInteger rowToUse;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     weatherarray = [[NSArray alloc]initWithObjects:@"sun", @"sunWclouds", @"clouds", @"showers", @"sunshowers", @"rain", @"snow",@"flurries",@"fog",nil];
     
     _pickerViewContainer.frame = CGRectMake(0, 750, 600, 261);
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        [self showWeather];
+    } 
+}
+
+-(IBAction)showWeather
+{
+    
+    UIImage *rain = [UIImage imageNamed:@"rain.png"];
+    
+    UIImage *sun = [UIImage imageNamed:@"sun.jpeg"];
+    
+    UIImage *sunwclouds = [UIImage imageNamed:@"sunwclouds.jpeg"];
+    
+    UIImage *clouds = [UIImage imageNamed:@"clouds.gif"];
+    
+    UIImage *showers = [UIImage imageNamed:@"showers.png"];
+    
+    UIImage *snow = [UIImage imageNamed:@"snow.png"];
+    
+    UIImage *flurries = [UIImage imageNamed:@"flurries.jpeg"];
+    
+    UIImage *fog = [UIImage imageNamed:@"fog.png"];
+    
+    UIImage *sunshowers = [UIImage imageNamed:@"sunshowers.png"];
+    
+    if([[weatherarray objectAtIndex:rowToUse] isEqual:@"rain"])
+    {
+        [weatherImage setImage:rain];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sun"])
+    {
+        [weatherImage setImage:sun];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sunWclouds"])
+    {
+        [weatherImage setImage:sunwclouds];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"clouds"])
+    {
+        [weatherImage setImage:clouds];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"showers"])
+    {
+        [weatherImage setImage:showers];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"sunshowers"])
+    {
+        [weatherImage setImage:sunshowers];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"snow"])
+    {
+        [weatherImage setImage:snow];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"flurries"])
+    {
+        [weatherImage setImage:flurries];
+    }
+    else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"fog"])
+    {
+        [weatherImage setImage:fog];
+    }
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -43,61 +118,7 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    UIImage *rain = [UIImage imageNamed:@"rain.png"];
-    
-    UIImage *sun = [UIImage imageNamed:@"sun.jpeg"];
-    
-    UIImage *sunwclouds = [UIImage imageNamed:@"sunwclouds.jpeg"];
-    
-    UIImage *clouds = [UIImage imageNamed:@"clouds.gif"];
-    
-    UIImage *showers = [UIImage imageNamed:@"showers.png"];
-    
-    UIImage *snow = [UIImage imageNamed:@"snow.png"];
-    
-    UIImage *flurries = [UIImage imageNamed:@"flurries.jpeg"];
-    
-    UIImage *fog = [UIImage imageNamed:@"fog.png"];
-    
-    UIImage *sunshowers = [UIImage imageNamed:@"sunshowers.png"];
-    
-    if([[weatherarray objectAtIndex:row] isEqual:@"rain"])
-    {
-        [weatherImage setImage:rain];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"sun"])
-    {
-        [weatherImage setImage:sun];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"sunWclouds"])
-    {
-        [weatherImage setImage:sunwclouds];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"clouds"])
-    {
-        [weatherImage setImage:clouds];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"showers"])
-    {
-        [weatherImage setImage:showers];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"sunshowers"])
-    {
-        [weatherImage setImage:sunshowers];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"snow"])
-    {
-        [weatherImage setImage:snow];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"flurries"])
-    {
-        [weatherImage setImage:flurries];
-    }
-    else if([[weatherarray objectAtIndex:row] isEqual:@"fog"])
-    {
-        [weatherImage setImage:fog];
-    }
-    /*label.text = [NSString stringWithFormat:@"%@ %@",[weatherarray objectAtIndex:[WeatherOptions selectedRowInComponent:0]], @"animation plays now"];*/
+    rowToUse = row;
 }
 
 - (void)didReceiveMemoryWarning {
