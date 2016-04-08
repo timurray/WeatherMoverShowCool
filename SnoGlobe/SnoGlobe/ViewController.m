@@ -27,6 +27,8 @@ NSInteger rowToUse;
     weatherarray = [[NSArray alloc]initWithObjects:@"sun", @"sunWclouds", @"clouds", @"showers", @"sunshowers", @"rain", @"snow",@"flurries",@"fog",nil];
     
     _pickerViewContainer.frame = CGRectMake(0, 750, 600, 261);
+    
+    //weatherImage.center = CGPointMake(123.0f, 200.0f);
 }
 
 - (BOOL)canBecomeFirstResponder
@@ -99,11 +101,19 @@ NSInteger rowToUse;
     {
         [weatherImage setImage:clouds];
         
-        NSArray *cloudyImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"clouds.jpg"], [UIImage imageNamed:@"clouds2.jpg"], nil];
+        //NSArray *cloudyImageArray = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"clouds.jpg"], [UIImage imageNamed:@"clouds2.jpg"], nil];
         
-        weatherImage.animationImages = cloudyImageArray;
-        weatherImage.animationDuration = 4.0;
-        [weatherImage startAnimating];
+        //weatherImage.animationImages = cloudyImageArray;
+        //weatherImage.animationDuration = 4.0;
+        //[weatherImage startAnimating];
+        //NSInteger x = 123.0f;
+        //NSInteger y = 200.0f;
+        
+        //[UIView animateWithDuration:2.0 animations:^{while(x != 500.0f){weatherImage.center = CGPointMake(x + 50.0f, y);}}];
+        
+        [UIImageView animateWithDuration:2.0f animations:^{
+            weatherImage.frame = CGRectMake(100.0f, 100.0f, weatherImage.frame.size.width, weatherImage.frame.size.height);
+        }];
     }
     else if([[weatherarray objectAtIndex:rowToUse] isEqual:@"showers"])
     {
